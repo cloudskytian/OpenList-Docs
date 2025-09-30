@@ -631,7 +631,7 @@ The configuration of scheme. Set this field if using HTTPS.
     "key_file": "data\\key.key",    // Path of key file
     "unix_file": "",        // Unix socket file path to listen on, default empty, if you want to use unix socket, set it to non empty
     "unix_file_perm": "",   // Unix socket file permission, set to the appropriate permissions
-    "enable_h2c": false  // Support HTTP/2 Cleartext (H2C) protocol for alist's http service. The cleartext HTTP/2 protocol supports nginx's grpc_pass after it is enabled - https://github.com/AlistGo/alist/pull/8294
+    "enable_h2c": false  // Support HTTP/2 Cleartext (H2C) protocol for openlist's http service. The cleartext HTTP/2 protocol supports nginx's grpc_pass after it is enabled - https://github.com/AlistGo/alist/pull/8294
   },
 ```
 
