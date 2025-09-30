@@ -1219,7 +1219,7 @@ Both IPv4 and IPv6 are supported.
 
 :::
 
-::: zh-cn
+::: zh-CN
 
 ```json
   "proxy_address": "",
