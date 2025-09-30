@@ -165,7 +165,8 @@ After modifying the configuration file, restart OpenList for changes to take eff
     "enable": false,
     "listen": ":5222"
   },
-  "last_launched_version": "OpenList version"
+  "last_launched_version": "OpenList version",
+  "proxy_address": ""
 }
 ```
 
@@ -177,11 +178,12 @@ After modifying the configuration file, restart OpenList for changes to take eff
 
 ::: en
 By default OpenList reads the configuration from environment variables, set this field to `true` to force OpenList to read config from the configuration file.
-<br/>
+
 :::
+
 ::: zh-CN
 程序会优先从环境变量中读取配置，设置 `force` 为 `true` 会使程序忽略环境变量强制读取配置文件。
-<br/>
+
 :::
 
 ### site_url
@@ -230,8 +232,8 @@ The address of the CDN. Included `$version` values will be dynamically replaced 
 CDN 地址，如果要使用 CDN，可以设置该字段，`$version` 会被动态替换为 `Openlist-Frontend` 的实际版本。
 :::
 
-- https://www.npmjs.com/package/@openlist-frontend/openlist-frontend
-- https://github.com/OpenListTeam/Openlist-Frontend
+- <https://www.npmjs.com/package/@openlist-frontend/openlist-frontend>
+- <https://github.com/OpenListTeam/Openlist-Frontend>
 
 ::: en
 Thus it is possible to use any npm or ~~GitHub~~ CDN path for this field. Do not include the slash `/` at the end of the address. For example:
@@ -284,8 +286,10 @@ To solve this problem, we've added the ability to fetch `index.html` from CDN fo
 Since Beta versions don't have NPM CDN provided by OpenListTeam, you need to deploy it yourself:
 
 1. **Deploy frontend build artifacts**
+
    - Deploy build artifacts to a CDN platform (you can use Cloudflare Pages, EdgeOne Pages, etc.)
    - Configure necessary CORS headers, for example of `edgeone.json`:
+
      ```json
      {
        "headers": [
@@ -318,9 +322,11 @@ Since Beta versions don't have NPM CDN provided by OpenListTeam, you need to dep
        ]
      }
      ```
+
    - Recommend using "copy + overwrite" deployment method, retaining old version resource files to ensure compatibility for versions not rebooted
 
 2. **Configure backend**
+
    - Add CDN configuration in `config.json`
    - The program will automatically fetch the latest `index.html` from CDN when starting
 
@@ -370,8 +376,10 @@ OpenList 后端需要将 `index.html` 加载到内存中进行处理，包括插
 由于目前 OpenList 的 Beta 版本没有可用的 CDN，您需要自行部署：
 
 1. **部署前端构建产物**
+
    - 将构建产物部署到 CDN 平台（可使用 Cloudflare Pages、EdgeOne Pages 等）
    - 配置必要的 CORS 标头，如下方的 `edgeone.json`
+
      ```json
      {
        "headers": [
@@ -404,7 +412,9 @@ OpenList 后端需要将 `index.html` 加载到内存中进行处理，包括插
        ]
      }
      ```
+
    - 可以使用"复制+覆盖"方式部署，保留旧版本资源文件，确保兼容未重启的版本
+
 2. **配置后端**
    - 在 `config.json` 中添加 CDN 配置
    - 程序启动时会自动从 CDN 获取最新的 `index.html`
@@ -446,11 +456,11 @@ flowchart TD
 
 ::: en
 The secret used to sign the JWT token, randomly generated on first run.
-<br/>
+
 :::
 ::: zh-CN
 用于签署 JWT 令牌的密钥，第一次启动时随机生成。
-<br/>
+
 :::
 
 ### token_expires_in
@@ -510,7 +520,7 @@ The database configuration, which is by default `sqlite3`. Available options are
 
 ::: en
 ::: details Expand to view details of `ssl_mode`
-Leave blank if you do not understand what this is; no effective help can be given easily.
+If you don't know how to fill it in, then your server probably doesn't have SSL enabled, so just leave it blank.
 In MySQL, the `ssl_mode` parameter is used to specify the authentication mode of the SSL connection. Here are a few common options:
 
 - `DISABLED`: Disable SSL connections.
@@ -527,13 +537,11 @@ In MySQL, the `ssl_mode` parameter is used to specify the authentication mode of
 - `verify-ca`: Force to use SSL connection and verify the authenticity of the server certificate.
 - `verify-full`: Force to use an SSL connection and verify the authenticity of the server certificate and that the name matches the connecting hostname.
 
-**The above information is from ChatGPT, so the accuracy has not been verified**
-
 :::
 
 ::: zh-CN
 ::: details 展开查看 `ssl_mode` 参数选项
-如果不知道如何填，默认空白即可，不用修改，不填不能用的话自行研究，无法提供太多有效的帮助
+如果不知道如何填，那你的服务器应该也并没有开启SSL，留空即可。
 在 MySQL 中，`ssl_mode` 参数是用于指定 SSL 连接的验证模式。以下是几种常见的选项：
 
 - `DISABLED`: 禁用 SSL 连接。
@@ -554,7 +562,6 @@ In MySQL, the `ssl_mode` parameter is used to specify the authentication mode of
 - `verify-ca`: 必须使用 SSL 连接，并验证服务器证书的可信性。
 - `verify-full`: 必须使用 SSL 连接，并验证服务器证书的可信性和名称是否与连接的主机名匹配。
 
-**以上信息来自 ChatGPT，未验证真实性/实用性/准确性:**
 :::
 
 ::: en
@@ -587,8 +594,8 @@ In MySQL, the `ssl_mode` parameter is used to specify the authentication mode of
   },
 ```
 
-- Documentation link：https://www.meilisearch.com/docs
-- Reference Links：https://github.com/AlistGo/alist/discussions/6830
+- Documentation link：<https://www.meilisearch.com/docs>
+- Reference Links：<https://github.com/AlistGo/alist/discussions/6830>
 
 :::
 
@@ -602,8 +609,8 @@ In MySQL, the `ssl_mode` parameter is used to specify the authentication mode of
   },
 ```
 
-- 文档链接：https://www.meilisearch.com/docs
-- 参考链接：https://github.com/AlistGo/alist/discussions/6830
+- 文档链接：<https://www.meilisearch.com/docs>
+- 参考链接：<https://github.com/AlistGo/alist/discussions/6830>
 
 :::
 
@@ -624,7 +631,7 @@ The configuration of scheme. Set this field if using HTTPS.
     "key_file": "data\\key.key",    // Path of key file
     "unix_file": "",        // Unix socket file path to listen on, default empty, if you want to use unix socket, set it to non empty
     "unix_file_perm": "",   // Unix socket file permission, set to the appropriate permissions
-    "enable_h2c": false		// Support HTTP/2 Cleartext (H2C) protocol for alist's http service. The cleartext HTTP/2 protocol supports nginx's grpc_pass after it is enabled - https://github.com/AlistGo/alist/pull/8294
+    "enable_h2c": false  // Support HTTP/2 Cleartext (H2C) protocol for alist's http service. The cleartext HTTP/2 protocol supports nginx's grpc_pass after it is enabled - https://github.com/AlistGo/alist/pull/8294
   },
 ```
 
@@ -645,7 +652,7 @@ The configuration of scheme. Set this field if using HTTPS.
     "key_file": "data\\key.key",    // 证书密钥文件路径
     "unix_file": "",        // Unix 监听套接字文件路径,默认的空的,如果你想使用 Unix socket,将其设置为非空
     "unix_file_perm": "",   // Unix 监听套接字文件，设置为合适的权限
-    "enable_h2c": false		// 为 openlist 的 http 服务支持 HTTP/2 Cleartext (H2C) 协议。明文的 HTTP/2 协议,开启后支持 nginx 的 grpc_pass - https://github.com/AlistGo/alist/pull/8294
+    "enable_h2c": false  // 为 openlist 的 http 服务支持 HTTP/2 Cleartext (H2C) 协议。明文的 HTTP/2 协议,开启后支持 nginx 的 grpc_pass - https://github.com/AlistGo/alist/pull/8294
   },
 ```
 
@@ -712,12 +719,12 @@ The log configuration. Set this field to save detailed logs of disable.
 
 ```json
   "log": {
-    "enable": true,					// Whether OpenList should store logs
-    "name": "data\\log\\log.log",	// The path and name of the log file
-    "max_size": 10,					// the maximum size of a single log file, in MB. After reaching the specified size, the file will be automatically split.
-    "max_backups": 5,				// the number of log backups to keep. Old backups will be deleted automatically when the limit is exceeded.
-    "max_age": 28,					// The maximum number of days preserved in the log file, the log file that exceeds the number of days will be deleted
-    "compress": false,			// Whether to enable log file compression functions. After compression, the file size can be reduced, but you need to decompress when viewing, and the default is to close the state false
+    "enable": true,     // Whether OpenList should store logs
+    "name": "data\\log\\log.log", // The path and name of the log file
+    "max_size": 10,     // the maximum size of a single log file, in MB. After reaching the specified size, the file will be automatically split.
+    "max_backups": 5,    // the number of log backups to keep. Old backups will be deleted automatically when the limit is exceeded.
+    "max_age": 28,     // The maximum number of days preserved in the log file, the log file that exceeds the number of days will be deleted
+    "compress": false,   // Whether to enable log file compression functions. After compression, the file size can be reduced, but you need to decompress when viewing, and the default is to close the state false
     "filter": {             // skip some logs output, not enable by default
       "enable": false,
       "filters": [            // preset example
@@ -759,12 +766,12 @@ Take note of the startup log to confirm the load, as detailed in the source code
 
 ```json
   "log": {
-    "enable": true,					// 开启日志记录功能，默认为开启状态 true
-    "name": "data\\log\\log.log",	// 日志文件的路径和名称
-    "max_size": 10,					// 单个日志文件的最大大小，单位为 MB。达到指定大小后会自动切分文件
-    "max_backups": 5,				// 保留的日志备份数量，超过数量会自动删除旧的备份
-    "max_age": 28,					// 日志文件保存的最大天数，超过天数的日志文件会被删除
-    "compress": false,			// 是否启用日志文件压缩功能。压缩后可以减小文件大小，但查看时需要解压缩，默认为关闭状态 false
+    "enable": true,     // 开启日志记录功能，默认为开启状态 true
+    "name": "data\\log\\log.log", // 日志文件的路径和名称
+    "max_size": 10,     // 单个日志文件的最大大小，单位为 MB。达到指定大小后会自动切分文件
+    "max_backups": 5,    // 保留的日志备份数量，超过数量会自动删除旧的备份
+    "max_age": 28,     // 日志文件保存的最大天数，超过天数的日志文件会被删除
+    "compress": false,   // 是否启用日志文件压缩功能。压缩后可以减小文件大小，但查看时需要解压缩，默认为关闭状态 false
     "filter": {             // 按条件过滤日志功能，默认不开启
       "enable": false,
       "filters": [            // 预设例子
@@ -805,19 +812,27 @@ Take note of the startup log to confirm the load, as detailed in the source code
 ### delayed_start
 
 ::: en
+
 Whether to delay OpenList startup.
+
+<!-- markdownlint-disable-next-line MD036 -->
 
 **Time unit: second**
 
 Generally this option is used when OpenList is configured to auto-start. The reason is that sometimes network takes some time to connect, so drivers requiring cannot start correctly after OpenList starts.
+
 :::
 
 ::: zh-CN
+
 是否延时启动，一般此功能常用于 OpenList 开机自启动选项。
+
+<!-- markdownlint-disable-next-line MD036 -->
 
 **单位：秒**
 
 因为有时候网络连接的慢，导致 OpenList 启动过快后需要网络连接的驱动无法连接导致无法正常打开。
+
 :::
 
 ### max_connections
@@ -930,9 +945,9 @@ Configuration for background task threads.
 A new **transmission** configuration path is added to the background configuration: `/@manage/settings/traffic`
 
 - Supports limiting the number of threads and transmission uplink and downlink rates of **6 tasks**
-- **https://github.com/AlistGo/alist/pull/7948**
+- **<https://github.com/AlistGo/alist/pull/7948>**
   Operation principle: If `settings/traffic` does not have a thread number field (first run or just upgraded from an old version), `settings/traffic` will be initialized with the value of the config configuration file. If `settings/traffic` has a value, the thread configuration information of config will be ignored
-- **https://github.com/AlistGo/alist/pull/7948#issuecomment-2775174617**
+- **<https://github.com/AlistGo/alist/pull/7948#issuecomment-2775174617>**
 - Summary: For newly installed or upgraded versions, the values will be read from the configuration file to initialize the `traffic` configuration information. Subsequent modifications to the thread only need to be modified in the background.
 
 :::
@@ -999,9 +1014,9 @@ A new **transmission** configuration path is added to the background configurati
 在后台配置中新增一个 **Transmission** 配置路径：`/@manage/settings/traffic`
 
 - 支持限制 **6 种任务** 的线程数和传输上下行速率
-- **https://github.com/AlistGo/alist/pull/7948**
+- **<https://github.com/AlistGo/alist/pull/7948>**
   运行原理：如果 `settings/traffic` 没有线程数字段（第一次运行或者刚从旧版本升级），会用config配置文件的值初始化 `settings/traffic`，如果 `settings/traffic` 有值就会忽略config的线程配置信息
-- **https://github.com/AlistGo/alist/pull/7948#issuecomment-2775174617**
+- **<https://github.com/AlistGo/alist/pull/7948#issuecomment-2775174617>**
 - 总结：新安装或者新升级的版本，会先从配置文件读取数值来初始化 `传输` 配置信息，后续修改线程只需要在后台修改就可以
 
 :::
@@ -1188,4 +1203,30 @@ Other instructions: [Click to view](../guide/advanced/ftp.md)
 - `listen`：端口号
 
 其它说明：[点击查看](../guide/advanced/ftp.md)
+:::
+
+### proxy
+
+::: en
+
+```json
+  "proxy_address": "",
+```
+
+Supports HTTP proxy, HTTPS proxy, SOCKS4 proxy, SOCKS5 proxy, SOCKS5HOSTNAME proxy.
+
+Both IPv4 and IPv6 are supported.
+
+:::
+
+::: zh-cn
+
+```json
+  "proxy_address": "",
+```
+
+支持HTTP代理、HTTPS代理、SOCKS4代理、SOCKS5代理、SOCKS5HOSTNAME代理。
+
+同时兼容IPv4和IPv6。
+
 :::
