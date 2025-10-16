@@ -355,6 +355,7 @@ Available Commands:
 
 Flags:
       --data string     data folder (default "data")
+      --config string   config file (default "data/config.json")
       --debug           start with debug mode
       --dev             start with dev mode
       --force-bin-dir   Force to use the directory where the binary file is located as data directory
@@ -390,6 +391,7 @@ Use "openlist [command] --help" for more information about a command.
 
 标志参数：
   --data string   数据文件夹（默认值 "data"）
+  --config string 配置文件（默认值 "data/config.json"）
   --debug         启动时使用调试模式
   --dev           启动时使用开发模式
   --force-bin-dir 强制使用二进制文件所在目录作为数据目录
