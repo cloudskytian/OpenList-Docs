@@ -4,7 +4,7 @@ title:
   zh-CN: SMB
 icon: iconfont icon-state
 # This control sidebar order
-top: 190
+top: 896
 # A page can have multiple categories
 categories:
   - guide

@@ -4,7 +4,7 @@ title:
   zh-CN: 别名（Alias）
 icon: iconfont icon-state
 # This control sidebar order
-top: 90
+top: 997
 # A page can have multiple categories
 categories:
   - guide

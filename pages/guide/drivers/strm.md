@@ -4,7 +4,7 @@ title:
   zh-CN: Strm
 icon: iconfont icon-state
 # This control sidebar order
-top: 170
+top: 995
 # A page can have multiple categories
 categories:
   - guide

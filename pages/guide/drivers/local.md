@@ -4,7 +4,7 @@ title:
   zh-CN: 本机存储
 icon: iconfont icon-state
 # This control sidebar order
-top: 520
+top: 999
 # A page can have multiple categories
 categories:
   - guide
