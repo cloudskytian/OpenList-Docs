@@ -4,7 +4,7 @@ title:
   zh-CN: Seafile
 icon: iconfont icon-state
 # This control sidebar order
-top: 150
+top: 495
 # A page can have multiple categories
 categories:
   - guide

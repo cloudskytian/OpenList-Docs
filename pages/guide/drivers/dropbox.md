@@ -4,7 +4,7 @@ title:
   zh-CN: Dropbox
 icon: iconfont icon-state
 # This control sidebar order
-top: 100
+top: 590
 # A page can have multiple categories
 categories:
   - guide

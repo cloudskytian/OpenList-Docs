@@ -4,7 +4,7 @@ title:
   zh-CN: 蓝奏云盘
 icon: iconfont icon-state
 # This control sidebar order
-top: 390
+top: 688
 # A page can have multiple categories
 categories:
   - guide

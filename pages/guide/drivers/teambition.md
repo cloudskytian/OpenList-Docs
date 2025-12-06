@@ -4,7 +4,7 @@ title:
   zh-CN: Teambition
 icon: iconfont icon-state
 # This control sidebar order
-top: 300
+top: 681
 # A page can have multiple categories
 categories:
   - guide

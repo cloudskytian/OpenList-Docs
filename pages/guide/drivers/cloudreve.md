@@ -4,7 +4,7 @@ title:
   zh-CN: Cloudreve V3
 icon: iconfont icon-state
 # This control sidebar order
-top: 70
+top: 498
 # A page can have multiple categories
 categories:
   - guide

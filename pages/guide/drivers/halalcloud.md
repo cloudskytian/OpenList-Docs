@@ -4,7 +4,7 @@ title:
   zh-CN: 6盘
 icon: iconfont icon-state
 # This control sidebar order
-top: 200
+top: 679
 # A page can have multiple categories
 categories:
   - guide

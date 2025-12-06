@@ -4,7 +4,7 @@ title:
   zh-CN: 网易云音乐云盘
 icon: iconfont icon-state
 # This control sidebar order
-top: 250
+top: 677
 # A page can have multiple categories
 categories:
   - guide

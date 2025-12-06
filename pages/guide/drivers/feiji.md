@@ -4,7 +4,7 @@ title:
   zh-CN: 小飞机网盘
 icon: iconfont icon-state
 # This control sidebar order
-top: 370
+top: 686
 # A page can have multiple categories
 categories:
   - guide

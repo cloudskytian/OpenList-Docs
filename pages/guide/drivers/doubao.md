@@ -4,7 +4,7 @@ title:
   zh-CN: 豆包云盘
 icon: iconfont icon-state
 # This control sidebar order
-top: 520
+top: 676
 # A page can have multiple categories
 categories:
   - guide
@@ -19,7 +19,6 @@ Mount [Doubao Drive](https://www.doubao.com/drive/) cloud storage.
 挂载 [豆包云盘](https://www.doubao.com/drive/) 云存储。
 
 :::
-
 
 ## Root folder ID { lang="en" }
 

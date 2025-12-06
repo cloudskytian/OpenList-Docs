@@ -4,7 +4,7 @@ title:
   zh-CN: 四川电信魔盘
 icon: iconfont icon-state
 # This control sidebar order
-top: 430
+top: 691
 # A page can have multiple categories
 categories:
   - guide

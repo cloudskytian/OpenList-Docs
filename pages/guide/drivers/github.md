@@ -4,7 +4,7 @@ title:
   zh-CN: GitHub API
 icon: iconfont icon-state
 # This control sidebar order
-top: 30
+top: 399
 # A page can have multiple categories
 categories:
   - guide

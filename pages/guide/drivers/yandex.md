@@ -4,7 +4,7 @@ title:
   zh-CN: Yandex云盘
 icon: iconfont icon-state
 # This control sidebar order
-top: 80
+top: 589
 # A page can have multiple categories
 categories:
   - guide

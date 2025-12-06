@@ -4,7 +4,7 @@ title:
   zh-CN: 贡献新存储驱动
 icon: iconfont icon-code
 # This control sidebar order
-top: 10
+top: 100
 # A page can have multiple categories
 categories:
   - guide

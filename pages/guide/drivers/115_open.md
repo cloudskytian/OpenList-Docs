@@ -5,7 +5,7 @@ title:
 # This is the icon of the page
 icon: iconfont icon-state
 # This control sidebar order
-top: 500
+top: 698
 # A page can have multiple categories
 categories:
   - guide

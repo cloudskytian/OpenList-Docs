@@ -4,7 +4,7 @@ title:
   zh-CN: Teldrive
 icon: iconfont icon-state
 # This control sidebar order
-top: 214
+top: 586
 # A page can have multiple categories
 categories:
   - guide

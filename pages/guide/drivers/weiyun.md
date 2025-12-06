@@ -4,7 +4,7 @@ title:
   zh-CN: 腾讯微云
 icon: iconfont icon-state
 # This control sidebar order
-top: 310
+top: 682
 # A page can have multiple categories
 categories:
   - guide

@@ -4,7 +4,7 @@ title:
   zh-CN: OneDrive / 分享
 icon: iconfont icon-state
 # This control sidebar order
-top: 480
+top: 599
 # A page can have multiple categories
 categories:
   - guide

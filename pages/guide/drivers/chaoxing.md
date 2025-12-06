@@ -4,7 +4,7 @@ title:
   zh-CN: 超星星小组盘
 icon: iconfont icon-state
 # This control sidebar order
-top: 280
+top: 678
 # A page can have multiple categories
 categories:
   - guide

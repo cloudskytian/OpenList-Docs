@@ -4,7 +4,7 @@ title:
   zh-CN: MEGA Disk
 icon: iconfont icon-state
 # This control sidebar order
-top: 160
+top: 592
 # A page can have multiple categories
 categories:
   - guide

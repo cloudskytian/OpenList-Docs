@@ -4,7 +4,7 @@ title:
   zh-CN: 迅雷云盘 / X / 浏览器
 icon: iconfont icon-state
 # This control sidebar order
-top: 270
+top: 685
 # A page can have multiple categories
 categories:
   - guide

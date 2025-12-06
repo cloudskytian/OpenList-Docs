@@ -4,7 +4,7 @@ title:
   zh-CN: OpenList
 icon: iconfont icon-state
 # This control sidebar order
-top: 515
+top: 499
 # A page can have multiple categories
 categories:
   - guide

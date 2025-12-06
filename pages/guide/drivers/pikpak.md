@@ -4,7 +4,7 @@ title:
   zh-CN: PikPak / 分享
 icon: iconfont icon-state
 # This control sidebar order
-top: 290
+top: 595
 # A page can have multiple categories
 categories:
   - guide

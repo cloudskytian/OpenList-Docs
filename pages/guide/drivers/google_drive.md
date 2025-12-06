@@ -4,7 +4,7 @@ title:
   zh-CN: 谷歌云盘
 icon: iconfont icon-state
 # This control sidebar order
-top: 330
+top: 597
 # A page can have multiple categories
 categories:
   - guide

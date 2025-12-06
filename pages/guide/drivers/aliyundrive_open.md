@@ -4,7 +4,7 @@ title:
   zh-CN: 阿里云盘 Open
 icon: iconfont icon-state
 # This control sidebar order
-top: 510
+top: 699
 # A page can have multiple categories
 categories:
   - guide

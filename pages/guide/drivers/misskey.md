@@ -4,7 +4,7 @@ title:
   zh-CN: Misskey Drive
 icon: iconfont icon-state
 # This control sidebar order
-top: 50
+top: 588
 # A page can have multiple categories
 categories:
   - guide

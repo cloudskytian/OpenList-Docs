@@ -4,7 +4,7 @@ title:
   zh-CN: Terabox（海外百度）
 icon: iconfont icon-state
 # This control sidebar order
-top: 40
+top: 594
 # A page can have multiple categories
 categories:
   - guide
